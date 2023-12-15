@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 引入axios的js文件 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+
+        // 发送请求
+        axios({
+            method:'get',
+            url:'http://127.0.0.1:8080/getAll'
+        }).then(result=>{
+            console.log(result.data)
+        }).catch(err=>{
+            console.log(err)
+        })
+
+    </script>
+</body>
+</html>
